@@ -44,7 +44,11 @@
                                 Cart
 
                                 <div class="badge badge-danger">
-                                  {{Cart::session(auth()->id())->getTotalQuantity()}}
+                                    @auth
+                                  {{Cart::session(auth()->id())->getContent()->count()}}
+                                  @else
+                                  0
+                                  @endauth
                                   </div>
 
                             </a>
