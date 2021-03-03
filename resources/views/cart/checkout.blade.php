@@ -51,7 +51,24 @@
       </div>
 
 
-      <button type="submit" class="btn btn-primary">Place Order</button>
+      <h4>Payment Option</h4>
+      <div class="form-check">
+        <label class="form-check-label">
+          <input type="radio" class="form-check-input" name="payment_method" id="" value="checkedValue" checked>
+          Cash on delivery
+        </label>
+      </div>
+
+      <div class="form-check">
+        <label class="form-check-label">
+          <input type="radio" class="form-check-input" name="payment_method" id="" value="checkedValue" checked>
+          Paypal
+        </label>
+      </div>
+
+
+
+      <button type="submit" class="btn btn-primary mt-3">Place Order</button>
 
 
 
